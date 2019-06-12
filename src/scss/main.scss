@@ -1,0 +1,24 @@
+/*! 
+ * Shiba CSS | MIT License
+ *
+ * A simple and lightweight CSS Framework built with Sass 
+ * for building responsive web apps.
+ *
+ * Author: Lam Pham
+ * Source: https://github.com/completejavascript/shiba
+ * Documentation: https://about.phamvanlam.com/shiba
+ */
+
+//==============================================================================
+// Base configurations
+//==============================================================================
+
+@import "base/variables";
+@import "base/breakpoints";
+@import "base/reset";
+
+//==============================================================================
+// Components
+//==============================================================================
+
+@import "components/grid";

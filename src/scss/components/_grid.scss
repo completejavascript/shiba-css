@@ -1,0 +1,68 @@
+/**
+ * Grid
+ */
+
+.container-full {
+  max-width: 100%;
+  padding: 0 $padding;
+}
+
+.container {
+  @extend .container-full;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: $padding;
+}
+
+// Generate column info in each break-point: xs, sm, md, lg, xl
+@mixin gen-column($type) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$type}-#{$i} {
+      width: (100% / $grid-columns) * $i
+    }
+  }
+}
+
+@include gen-column(xs);
+
+@include sm-breakpoint {
+  @include gen-column(sm);
+
+  .container {
+    max-width: $sm
+  }
+}
+
+@include md-breakpoint {
+  @include gen-column(md);
+
+  .container {
+    max-width: $md
+  }
+}
+
+@include lg-breakpoint {
+  @include gen-column(lg);
+
+  .container {
+    max-width: $lg
+  }
+}
+
+@include xl-breakpoint {
+  @include gen-column(xl);
+
+  .container {
+    max-width: $xl
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "shiba-css",
+  "version": "1.0.0",
+  "description": "A simple and lightweight CSS Framework built with Sass for building responsive web apps",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass ./src/scss/ -o ./dist/css/ -w -r --source-map-embed --source-map-contents --output-style expanded",
+    "release": "node-sass ./src/scss/main.scss ./dist/css/main.min.css -w --output-style compressed",
+    "serve": "light-server -s dist -w \"dist/**\"",
+    "dev": "concurrently \"npm run build\" \"npm run serve\""
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "ui",
+    "css",
+    "framework",
+    "responsive",
+    "mobile-first"
+  ],
+  "author": "Lam Pham",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "light-server": "^2.6.2",
+    "node-sass": "^4.12.0"
+  }
+}
