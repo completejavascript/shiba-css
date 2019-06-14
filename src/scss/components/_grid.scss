@@ -2,6 +2,22 @@
  * Grid
  */
 
+// Generate column info in each break-point: xs, sm, md, lg, xl
+@mixin gen-column($type) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$type}-#{$i} {
+      width: (100% / $grid-columns) * $i
+    }
+  }
+}
+
+// Set value of .container's max-width
+@mixin set-container-max-width($value) {
+  .container {
+    max-width: $value;
+  }
+}
+
 .container-full {
   max-width: 100%;
   padding: 0 $padding;
@@ -21,48 +37,27 @@
 
 [class*="col-"] {
   float: left;
-  padding: $padding;
-}
-
-// Generate column info in each break-point: xs, sm, md, lg, xl
-@mixin gen-column($type) {
-  @for $i from 1 through $grid-columns {
-    .col-#{$type}-#{$i} {
-      width: (100% / $grid-columns) * $i
-    }
-  }
+  padding: $padding 0;
 }
 
 @include gen-column(xs);
 
 @include sm-breakpoint {
   @include gen-column(sm);
-
-  .container {
-    max-width: $sm
-  }
+  @include set-container-max-width($sm)
 }
 
 @include md-breakpoint {
   @include gen-column(md);
-
-  .container {
-    max-width: $md
-  }
+  @include set-container-max-width($md)
 }
 
 @include lg-breakpoint {
   @include gen-column(lg);
-
-  .container {
-    max-width: $lg
-  }
+  @include set-container-max-width($lg)
 }
 
 @include xl-breakpoint {
   @include gen-column(xl);
-
-  .container {
-    max-width: $xl
-  }
+  @include set-container-max-width($xl)
 }
