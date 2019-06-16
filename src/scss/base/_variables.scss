@@ -1,27 +1,228 @@
 /**
- * Variables
- *
- * The majority of the configuration for the css framework.
- */
+* Variables
+*
+* The majority of the configuration for the css framework.
+*/
 
-//==============================================================================
-// Containers & Breakpoints
-//==============================================================================
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––---------------------------------------
++ Global Variables
+---- Color
+---- Border
+---- Spacing
+---- Font
++ Breakpoints
++ Grid
++ Base styles
+---- Body
++ Typography
+---- Heading
+---- Paragraph
++ Formatting
+---- Mark
+---- Link
+---- Inline code
+---- Code block
+---- Keyboard Input
+---- Blockquote
+---- Line break
++ List
++ Table
++ Button
++ Form
+*/
+
+/* Global Variables
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+
+// Color
+$background-color: #fff !default;
+$primary-color: #4078c0 !default;
+$text-color: #222 !default;
+$highlight-color: #ff0 !default;
+$border-color: #e0e0e0 !default;
+$code-bg-color: rgba(27,31,35,0.08) !default;
+$box-shadow-color: rgba(0,0,0,0.12) !default;
+$kbd-bg-color: #fafbfc !default;
+$kbd-color: #444d56 !default;
+$button-border-color: #bbb !default;
+$button-primary-text-color: #FFF !default;
+$form-item-border-color: #bbb !default;
+
+// Border
+$border-size: 0.1rem !default;
+$border-style: solid !default;
+$border-radius: 0.3rem !default;
+
+// Spacing
+$margin: 2rem !default;
+$padding: 1.5rem !default;
+
+// Font
+$font-style: normal !default;
+$font-variant: normal !default;
+$font-weight: normal !default;
+$font-size: 1.6rem !default;
+$font-family: -apple-system, BlinkMacSystemFont, Nunito Sans, Helvetica, Arial, sans-serif !default;
+$font-color: $text-color !default;
+$line-height: 1.6 !default;
+
+/* Breakpoints
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
 
 $sm: 600px !default;
 $md: 800px !default;
 $lg: 1000px !default;
 $xl: 1200px !default;
 
-//==============================================================================
-// Grid
-//==============================================================================
+/* Grid
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
 
 $grid-columns: 12 !default;
+$grid-container-padding: 0 $padding !default;
+$grid-column-padding: $padding 0 !default;
+$grid-container-ratio: 1 !default;
+$grid-container-small-ratio: 0.8 !default;
 
-//==============================================================================
-// Spacing
-//==============================================================================
+/* Base styles
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
 
-$padding: 1rem !default;
+// Body
+$body-padding: 0 !default;
+$body-bg-color: $background-color !default;
 
+/* Typography
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+
+// Heading
+$heading-font-weight: 400 !default;
+$heading-line-height: 1.2 !default;
+$heading-margin: 0 0 $margin !default;
+
+//-- Mobile heading font size
+$h1-font-size-mobile: 3.2rem !default;
+$h2-font-size-mobile: 2.8rem !default;
+$h3-font-size-mobile: 2.4rem !default;
+$h4-font-size-mobile: 2.2rem !default;
+$h5-font-size-mobile: 2.0rem !default;
+$h6-font-size-mobile: 1.8rem !default;
+
+//-- Normal Heading font size
+$h1-font-size: 3.6rem !default;
+$h2-font-size: 3.2rem !default;
+$h3-font-size: 2.8rem !default;
+$h4-font-size: 2.6rem !default;
+$h5-font-size: 2.4rem !default;
+$h6-font-size: 2.2rem !default;
+
+// Paragraph
+$p-margin: 0 0 $margin !default;
+
+/* Formatting
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+
+// Mark
+$mark-padding: 0 0.32rem !default;
+$mark-bg-color: $highlight-color !default;
+
+// Link
+$link-color: $primary-color !default;
+$link-hover-color: darken($link-color, 8%) !default;
+
+// Inline code
+$code-inline-bg-color: $code-bg-color !default;
+$code-inline-padding: 0.2rem 0.4rem !default;
+$code-inline-margin: 0 !default;
+$code-inline-font-size: 85% !default;
+$code-inline-border-radius: $border-radius !default;
+
+// Code block
+$code-block-margin: 0 0 $margin 0 !default;
+$code-block-bg-color: $code-bg-color !default;
+$code-block-padding: 1.2rem 1.6rem !default;
+$code-block-border-radius: $border-radius !default;
+$code-block-tab-size: 2 !default;
+
+// Keyboard input
+$kbd-border-radius: $border-radius !default;
+$kbd-font-size: 85% !default;
+$kbd-padding: 0.5rem 0.8rem !default;
+$kbd-border: $border-size $border-style $border-color !default;
+$kbd-box-shadow: inset 0 -1px 0 $box-shadow-color !default;
+$kbd-line-height: 1.2rem !default;
+
+// Blockquote
+$blockquote-border: 1rem $border-style $border-color !default;
+$blockquote-margin: 0 0 $margin !default;
+$blockquote-padding: 0 $padding !default;
+$blockquote-font-size: 1.8rem !default;
+$blockquote-cite-font-size: $font-size !default;
+$blockquote-cite-margin: $margin !default;
+$blockquote-cite-text-align: right !default;
+
+// Line break;
+$hr-border: $border-size $border-style $border-color !default;
+$hr-margin: 0 0 $margin !default;
+
+/* List
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+$list-margin: 0 0 $margin !default;
+$list-nested-margin: 0 !default;
+
+/* Table
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+$table-margin: 0 0 $margin !default;
+$table-width: 100% !default;
+$table-max-width: 100% !default;
+$table-border-spacing: 0 !default;
+$table-th-td-padding: 1.2rem $padding !default;
+$table-th-td-text-align: left !default;
+$table-th-td-border: $border-size $border-style $border-color !default;
+$table-th-td-first-child-padding-left: 0 !default;
+$table-th-td-last-child-padding-right: 0 !default;
+
+/* Button
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+$button-height: 3.8rem !default;
+$button-padding: 0 $padding !default;
+$button-font-size: $font-size !default;
+$button-bg-color: transparent !default;
+$button-border: $border-size $border-style $button-border-color !default;
+$button-outline: 0 !default;
+$button-margin: 0 0 0.8rem !default;
+$button-border-radius: $border-radius !default;
+$button-round-border-radius: 4rem !default;
+$button-text-transform: none !default;
+$button-text-color: $text-color !default;
+$button-primary-bg-color: $primary-color !default;
+$button-primary-border-color: $primary-color !default;
+$button-hover-border-color: $primary-color !default;
+$button-hover-text-color: darken($button-text-color, 8%) !default;
+$button-primary-hover-bg-color: darken($button-primary-bg-color, 8%) !default;
+$button-primary-hover-border-color: darken($button-primary-bg-color, 8%) !default;
+
+/* Form
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+$form-margin: 0 0 $margin !default;
+$form-item-height: 3.8rem !default;
+$form-item-margin: 0 0 $margin !default;
+$form-item-bg-color: transparent !default;
+$form-item-border:  $border-size $border-style $form-item-border-color !default;
+$form-item-border-radius: $border-radius !default;
+$form-item-box-shadow: none !default;
+$form-item-focus-border-color: $primary-color !default;
+$form-item-focus-outline: 0 !default;
+$form-item-width: 100% !default;
+$form-item-max-width: 100% !default;
+$form-input-padding: 0 $padding !default;
+$form-select-padding: 0 $padding !default;
+$form-textarea-min-height: 10rem !default;
+$form-textarea-padding: 1rem $padding !default;
+$form-label-margin: 0 0 0.5rem !default;
+$form-label-font-weight: 600 !default;
+$form-fieldset-border: $border-size $border-style $border-color !default;
+$form-fieldset-border-radius: $border-radius !default;
+$form-fieldset-padding: $padding !default;
+$form-fieldset-margin: $margin 0 !default;
+$form-legend-font-weight: 600 !default;
+$form-legend-padding: 0 0.5rem !default;

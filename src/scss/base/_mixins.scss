@@ -1,0 +1,104 @@
+/*
+* Mixins
+*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––---------------------------------------
++ Grid
++ Breakpoints
++ Button
++ Form
+*/
+
+/* Grid
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+// Generate column info in each break-point: xs, sm, md, lg, xl
+@mixin gen-column-width($type) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$type}-#{$i} {
+      width: (100% / $grid-columns) * $i;
+    }
+  }
+}
+
+// Set value of .container's max-width
+@mixin set-max-width($className, $value, $ratio) {
+  .#{$className} {
+    max-width: $value * $ratio;
+  }
+}
+
+/* Breakpoints
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+// Media query for mobile first layout 
+@mixin sm-breakpoint {
+  @media (min-width: #{$sm}) {
+    @content;
+  } 
+}  
+
+// Break on tablet
+@mixin md-breakpoint {
+  @media (min-width: #{$md}) {
+    @content;
+  } 
+}
+
+// Break on desktop
+@mixin lg-breakpoint {
+  @media (min-width: #{$lg}) {
+    @content;
+  }
+}
+
+// Break on large desktop
+@mixin xl-breakpoint {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+/* Button
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+@mixin btn-style {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  height: $button-height;
+  line-height: $button-height;
+  padding: $button-padding;
+  color: $button-text-color;
+  font-size: $button-font-size;
+  background-color: $button-bg-color;
+  border: $button-border;
+  border-radius: $button-border-radius;
+  outline: $button-outline;
+  margin: $button-margin;
+  text-transform: $button-text-transform;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $button-hover-text-color;
+    border-color: $button-hover-border-color; 
+  }
+}
+
+/* Form
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+@mixin form-item-style {
+  height: $form-item-height;
+  margin: $form-item-margin;
+  background-color: $form-item-bg-color;
+  border: $form-item-border;
+  border-radius: $form-item-border-radius;
+  box-shadow: $form-item-box-shadow;
+  width: $form-item-width;
+  max-width: $form-item-max-width;
+
+  &:hover, &:focus {
+    border-color: $form-item-focus-border-color;
+    outline: $form-item-focus-outline; 
+  }
+}

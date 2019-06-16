@@ -1,21 +1,100 @@
 /**
- * Helpers
- */
+* Helpers
+*/
 
- // border
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––-----------------------------
++ Border
++ Spacing
++ Float
++ Text
++ Display
++ Button
+*/
+
+/* Border
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
 .has-border {
-  border: 1px solid #cdcdcd;
+  border: $border-size $border-style $border-color !important;
 }
 
-// text
-.text-center {
-  text-align: center;
+/* Spacing
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+.no-padding {
+  padding: 0 !important;
 }
 
-.text-left {
-  text-align: left;
+/* Float
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+.float {
+  &-left {
+    float: left !important;
+  }
+
+  &-right {
+    float: right !important;
+  }
 }
 
-.text-right {
-  text-align: right;
+/* Text
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+.text {
+  &-center {
+    text-align: center !important;
+  }
+
+  &-left {
+    text-align: left !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+}
+
+/* Display
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+.display {
+  &-block {
+    display: block !important;
+  }
+
+  &-inline-block {
+    display: inline-block !important;
+  }
+
+  &-none {
+    display: none !important;
+  }
+}
+
+/* Button
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+.btn {
+  @include btn-style();
+
+  &-round {
+    border-radius: $button-round-border-radius !important;
+  }
+
+  &-square {
+    border-radius: 0 !important;
+  }
+
+  &-primary {
+    color: $button-primary-text-color !important;
+    background-color: $button-primary-bg-color !important;
+    border-color: $button-primary-border-color !important;
+
+    &:hover, &:focus {
+      color: $button-primary-text-color !important;
+      background-color: $button-primary-hover-bg-color !important;
+      border-color: $button-primary-hover-border-color !important;
+    }
+  }
+
+  &-full {
+    width: 100% !important;
+    display: block !important;
+  }
 }

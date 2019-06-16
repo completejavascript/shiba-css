@@ -1,0 +1,239 @@
+/**
+* Primitive
+*/
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––-----------------------------
++ Base styles
++ Typography
+---- Headings
+---- Paragraph
++ Formatting
+---- Mark
+---- Link
+---- Inline code
+---- Code block
+---- Keyboard Input
+---- Blockquote
+---- Line break
++ List
++ Table
++ Button
++ Form
+*/
+
+/* Base styles
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+body {
+  color: $font-color;
+  padding: $body-padding;
+  background-color: $body-bg-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: $font-style 
+        $font-variant 
+        $font-weight 
+        #{$font-size}/#{$line-height} 
+        $font-family;
+}
+
+/* Typography
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  line-height: $heading-line-height; 
+  font-weight: $heading-font-weight;
+  margin: $heading-margin;
+}
+
+h1 { font-size: $h1-font-size-mobile; }
+h2 { font-size: $h2-font-size-mobile; }
+h3 { font-size: $h3-font-size-mobile; }
+h4 { font-size: $h4-font-size-mobile; }
+h5 { font-size: $h5-font-size-mobile; }
+h6 { font-size: $h6-font-size-mobile; }
+
+@include sm-breakpoint {
+  h1 { font-size: $h1-font-size; }
+  h2 { font-size: $h2-font-size; }
+  h3 { font-size: $h3-font-size; }
+  h4 { font-size: $h4-font-size; }
+  h5 { font-size: $h5-font-size; }
+  h6 { font-size: $h6-font-size; }
+}
+
+// Paragraph
+p {
+  margin: $p-margin; 
+}
+
+/* Formating
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+// Mark
+mark {
+  padding: $mark-padding;
+  background-color: $mark-bg-color;
+}
+
+// Link
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+// Inline code
+:not(pre)>code {
+  background-color: $code-inline-bg-color;
+  border-radius: $code-inline-border-radius;
+  font-size: $code-inline-font-size;
+  margin: $code-inline-margin;
+  padding: $code-inline-padding;
+  white-space: nowrap;
+}
+
+// Code block
+pre {
+  background-color: $code-block-bg-color;
+  border-radius: $code-block-border-radius;
+  padding: $code-block-padding;
+  margin: $code-block-margin;
+  tab-size: $code-block-tab-size;
+  overflow: auto;
+
+  code {
+    white-space: pre;
+  }
+}
+
+// Keyboard Input
+kbd {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $kbd-bg-color;
+  color: $kbd-color;
+  border:$kbd-border;
+  border-radius: $kbd-border-radius;
+  box-shadow: $kbd-box-shadow;
+  font-size: $kbd-font-size;
+  line-height: $kbd-line-height;
+  padding: $kbd-padding;
+}
+
+// Blockquote
+blockquote {
+  margin: $blockquote-margin;
+  padding: $blockquote-padding;
+  border-left: $blockquote-border;
+  font-size: $blockquote-font-size;
+
+  cite {
+    display: block;
+    text-align: $blockquote-cite-text-align;
+    margin-top: $blockquote-cite-margin;
+    font-size: $blockquote-cite-font-size;
+  }
+}
+
+// Line break
+hr {
+  height: 0;
+  border: 0;
+  border-top: $hr-border;
+  margin: $hr-margin;
+}
+
+/* List
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+// Normal list
+ol, ul {
+  margin: $list-margin;
+}
+
+// Remove extra margin for nested lists
+ul li ul, ul li ol, ol li ol, ol li ul {
+  margin-bottom: $list-nested-margin;
+}
+
+/* Table
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+table {
+  margin: $table-margin;
+  width: $table-width;
+  max-width: $table-max-width;
+  border-spacing: $table-border-spacing;
+}
+
+th, td {
+  padding: $table-th-td-padding;
+  text-align: $table-th-td-text-align;
+  border-bottom: $table-th-td-border; 
+
+  &:first-child {
+    padding-left: $table-th-td-first-child-padding-left;
+  }
+
+  &:last-child {
+    padding-right: $table-th-td-last-child-padding-right;
+  }
+}
+
+/* Button
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+button, input[type="submit"], input[type="reset"], input[type="button"] {
+  @include btn-style();
+}
+
+/* Form
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+form {
+  margin: $form-margin;
+}
+
+input {
+  &[type="email"], &[type="number"], &[type="search"], &[type="text"],
+  &[type="tel"], &[type="url"], &[type="password"] {
+    @include form-item-style();
+    padding: $form-input-padding;
+  }
+
+  &[type="checkbox"], &[type="radio"] {
+    display: inline; 
+  }
+}
+
+select {
+  @include form-item-style();
+  padding: $form-select-padding;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) right center no-repeat;
+}
+
+textarea {
+  @include form-item-style();
+  padding: $form-textarea-padding;
+  min-height: $form-textarea-min-height;
+}
+
+label {
+  display: inline-block;
+  margin: $form-label-margin;
+  font-weight: $form-label-font-weight; 
+}
+
+fieldset {
+  border: $form-fieldset-border;
+  border-radius: $form-fieldset-border-radius;
+  padding: $form-fieldset-padding;
+  margin: $form-fieldset-margin;
+}
+
+legend {
+  padding: $form-legend-padding;
+  font-weight: $form-legend-font-weight;
+}
