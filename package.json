@@ -4,9 +4,9 @@
   "description": "A simple and lightweight CSS Framework built with Sass for building responsive web apps",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass ./src/scss/ -o ./dist/css/ -w -r --source-map-embed --source-map-contents --output-style expanded",
-    "compress": "node-sass ./src/scss/shiba.scss ./dist/css/shiba.min.css -w --output-style compressed",
-    "serve": "light-server -s dist -w \"dist/**\"",
+    "compile": "node-sass ./src/scss/ -o ./docs/css/ -w -r --source-map-embed --source-map-contents --output-style expanded",
+    "compress": "node-sass ./src/scss/shiba.scss ./docs/css/shiba.min.css -w --output-style compressed",
+    "serve": "light-server -s docs -w \"docs/**\"",
     "dev": "concurrently \"npm run compile\" \"npm run compress\" \"npm run serve\""
   },
   "keywords": [
