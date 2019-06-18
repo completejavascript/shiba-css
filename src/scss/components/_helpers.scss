@@ -20,8 +20,86 @@
 
 /* Spacing
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
-.no-padding {
-  padding: 0 !important;
+// Padding
+.no {
+  &-padding {
+    padding: 0 !important;
+  }
+
+  &-padding-top {
+    padding-top: 0 !important;
+  }
+
+  &-padding-right {
+    padding-right: 0 !important;
+  }
+
+  &-padding-bottom {
+    padding-bottom: 0 !important;
+  }
+
+  &-padding-left {
+    padding-left: 0 !important;
+  }
+}
+
+.padding {
+  &-top {
+    padding-top: $padding !important;
+  }
+
+  &-right {
+    padding-right: $padding !important;
+  }
+
+  &-bottom {
+    padding-bottom: $padding !important;
+  }
+
+  &-left {
+    padding-left: $padding !important;
+  }
+}
+
+// Margins
+.no {
+  &-margin {
+    margin: 0 !important;
+  }
+
+  &-margin-top {
+    margin-top: 0 !important;
+  }
+
+  &-margin-right {
+    margin-right: 0 !important;
+  }
+
+  &-margin-bottom {
+    margin-bottom: 0 !important;
+  }
+
+  &-margin-left {
+    margin-left: 0 !important;
+  }
+}
+
+.margin {
+  &-top {
+    margin-top: $padding !important;
+  }
+
+  &-right {
+    margin-right: $padding !important;
+  }
+
+  &-bottom {
+    margin-bottom: $padding !important;
+  }
+
+  &-left {
+    margin-left: $padding !important;
+  }
 }
 
 /* Float
