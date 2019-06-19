@@ -52,6 +52,9 @@ $kbd-color: #444d56 !default;
 $button-border-color: #bbb !default;
 $button-primary-text-color: #FFF !default;
 $form-item-border-color: #bbb !default;
+$button-bg-color: transparent !default;
+$form-item-bg-color: transparent !default;
+$button-primary-inverse-bg-color: transparent !default;
 
 // Border
 $border-size: 0.1rem !default;
@@ -194,7 +197,6 @@ $table-th-td-last-child-padding-right: 0 !default;
 $button-height: 3.8rem !default;
 $button-padding: 0 $padding !default;
 $button-font-size: $font-size !default;
-$button-bg-color: transparent !default;
 $button-border: $border-size $border-style $button-border-color !default;
 $button-outline: 0 !default;
 $button-margin: 0 0 0.8rem !default;
@@ -202,19 +204,23 @@ $button-border-radius: $border-radius !default;
 $button-round-border-radius: 4rem !default;
 $button-text-transform: none !default;
 $button-text-color: $primary-text-color !default;
-$button-primary-bg-color: $primary-color !default;
-$button-primary-border-color: $primary-color !default;
 $button-hover-border-color: $primary-color !default;
 $button-hover-text-color: darken($button-text-color, 8%) !default;
+$button-primary-bg-color: $primary-color !default;
+$button-primary-border-color: $primary-color !default;
 $button-primary-hover-bg-color: darken($button-primary-bg-color, 8%) !default;
 $button-primary-hover-border-color: darken($button-primary-bg-color, 8%) !default;
+$button-primary-inverse-text-color: $primary-text-color !default;
+$button-primary-inverse-border-color: $primary-color !default;
+$button-primary-inverse-hover-text-color: $background-color !default;
+$button-primary-inverse-hover-bg-color: $primary-color !default;
+$button-primary-inverse-hover-border-color: $primary-color !default;
 
 /* Form
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
 $form-margin: 0 0 $margin !default;
 $form-item-height: 3.8rem !default;
 $form-item-margin: 0 0 $margin !default;
-$form-item-bg-color: transparent !default;
 $form-item-border:  $border-size $border-style $form-item-border-color !default;
 $form-item-border-radius: $border-radius !default;
 $form-item-box-shadow: none !default;

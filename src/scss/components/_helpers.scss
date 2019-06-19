@@ -214,6 +214,18 @@
       background-color: $button-primary-hover-bg-color !important;
       border-color: $button-primary-hover-border-color !important;
     }
+
+    &-inverse {
+      color: $button-primary-inverse-text-color !important;
+      background-color: $button-primary-inverse-bg-color !important;
+      border-color: $button-primary-inverse-border-color !important;
+
+      &:hover, &:focus {
+        color: $button-primary-inverse-hover-text-color !important;
+        background-color: $button-primary-inverse-hover-bg-color !important;
+        border-color: $button-primary-inverse-hover-border-color !important;
+      }
+    }
   }
 
   &-full {
