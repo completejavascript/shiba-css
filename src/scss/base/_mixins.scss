@@ -21,10 +21,10 @@
   }
 }
 
-// Set value of .container's max-width
-@mixin set-max-width($className, $value, $ratio) {
+// Set value of .container's width
+@mixin set-width($className, $value, $ratio) {
   .#{$className} {
-    max-width: $value * $ratio;
+    width: $value * $ratio;
   }
 }
 

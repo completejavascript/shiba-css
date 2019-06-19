@@ -11,6 +11,7 @@
 ---- Border
 ---- Spacing
 ---- Font
+---- Transition
 + Breakpoints
 + Grid
 + Base styles
@@ -38,9 +39,12 @@
 // Color
 $background-color: #fff !default;
 $primary-color: #4078c0 !default;
-$text-color: #222 !default;
-$highlight-color: #ff0 !default;
-$border-color: #e0e0e0 !default;
+$important-color: #F44336 !default;
+$warning-color: #FFC107 !default;
+$primary-text-color: #222 !default;
+$secondary-text-color: #757575 !default;
+$highlight-color: #FF0 !default;
+$border-color: #CDCDCD !default;
 $code-bg-color: rgba(27,31,35,0.08) !default;
 $box-shadow-color: rgba(0,0,0,0.12) !default;
 $kbd-bg-color: #fafbfc !default;
@@ -64,8 +68,12 @@ $font-variant: normal !default;
 $font-weight: normal !default;
 $font-size: 1.6rem !default;
 $font-family: -apple-system, BlinkMacSystemFont, Nunito Sans, Helvetica, Arial, sans-serif !default;
-$font-color: $text-color !default;
+$font-color: $primary-text-color !default;
 $line-height: 1.6 !default;
+
+// Transition
+$transition-sec: 0.35s !default;
+$transition-type: ease-in-out !default;
 
 /* Breakpoints
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
@@ -193,7 +201,7 @@ $button-margin: 0 0 0.8rem !default;
 $button-border-radius: $border-radius !default;
 $button-round-border-radius: 4rem !default;
 $button-text-transform: none !default;
-$button-text-color: $text-color !default;
+$button-text-color: $primary-text-color !default;
 $button-primary-bg-color: $primary-color !default;
 $button-primary-border-color: $primary-color !default;
 $button-hover-border-color: $primary-color !default;
