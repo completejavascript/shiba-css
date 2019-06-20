@@ -136,6 +136,7 @@
 /* Text
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
 .text {
+  // Text position
   &-center {
     text-align: center !important;
   }
@@ -148,6 +149,7 @@
     text-align: right !important;
   }
 
+  // Text-color
   &-important {
     color: $important-color !important;
   }
@@ -162,6 +164,19 @@
 
   &-description {
     color: $secondary-text-color !important;
+  }
+
+  // Text-transform
+  &-uppercase {
+    text-transform: uppercase !important;
+  }
+
+  &-lowercase {
+    text-transform: lowercase !important;
+  }
+
+  &-capitalize {
+    text-transform: capitalize !important;
   }
 }
 
@@ -236,9 +251,15 @@
 
 /* Image
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
-.image-responsive {
-  width: 100% !important;
-  height: auto !important;
+.image {
+  &-responsive {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  &-round {
+    border-radius: 50% !important;
+  }
 }
 
 /* Transition
