@@ -8,6 +8,7 @@
 + Breakpoints
 + Button
 + Form
++ Color
 */
 
 /* Grid
@@ -100,5 +101,93 @@
   &:hover, &:focus {
     border-color: $form-item-focus-border-color;
     outline: $form-item-focus-outline; 
+  }
+}
+
+/* Color
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+@mixin color-propperties($prop) {
+  .#{$prop}-red {
+    #{$prop}: $red !important;
+  }
+
+  .#{$prop}-pink {
+    #{$prop}: $pink !important;
+  }
+
+  .#{$prop}-purple {
+    #{$prop}: $purple !important;
+  }
+
+  .#{$prop}-deep-purple {
+    #{$prop}: $deep-purple !important;
+  }
+
+  .#{$prop}-indigo {
+    #{$prop}: $indigo !important;
+  }
+
+  .#{$prop}-blue {
+    #{$prop}: $blue !important;
+  }
+
+  .#{$prop}-light-blue {
+    #{$prop}: $light-blue !important;
+  }
+
+  .#{$prop}-cyan {
+    #{$prop}: $cyan !important;
+  }
+
+  .#{$prop}-teal {
+    #{$prop}: $teal !important;
+  }
+
+  .#{$prop}-green {
+    #{$prop}: $green !important;
+  }
+
+  .#{$prop}-light-green {
+    #{$prop}: $light-green !important;
+  }
+
+  .#{$prop}-lime {
+    #{$prop}: $lime !important;
+  }
+
+  .#{$prop}-yellow {
+    #{$prop}: $yellow !important;
+  }
+
+  .#{$prop}-amber {
+    #{$prop}: $amber !important;
+  }
+
+  .#{$prop}-orange {
+    #{$prop}: $orange !important;
+  }
+
+  .#{$prop}-deep-orange {
+    #{$prop}: $deep-orange !important;
+  }
+
+  .#{$prop}-brown {
+    #{$prop}: $brown !important;
+  }
+
+  .#{$prop}-grey {
+    #{$prop}: $grey !important;
+  }
+
+  .#{$prop}-blue-grey {
+    #{$prop}: $blue-grey !important;
+  }
+
+  .#{$prop}-black {
+    #{$prop}: $black !important;
+  }
+
+  .#{$prop}-white {
+    #{$prop}: $white !important;
   }
 }
