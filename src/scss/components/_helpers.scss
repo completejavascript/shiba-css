@@ -27,20 +27,60 @@
 .border {
   border: $border-size $border-style $border-color !important;
 
+  &-2 {
+    border-width: $border-size * 2 !important;
+  }
+
+  &-3 {
+    border-width: $border-size * 3 !important;
+  }
+
   &-top {
     border-top: $border-size $border-style $border-color !important;
+
+    &-2 {
+      border-top-width: $border-size * 2 !important;
+    }
+  
+    &-3 {
+      border-top-width: $border-size * 3 !important;
+    }
   }
 
   &-right {
     border-right: $border-size $border-style $border-color !important;
+
+    &-2 {
+      border-right-width: $border-size * 2 !important;
+    }
+  
+    &-3 {
+      border-right-width: $border-size * 3 !important;
+    }
   }
 
   &-bottom {
     border-bottom: $border-size $border-style $border-color !important;
+
+    &-2 {
+      border-bottom-width: $border-size * 2 !important;
+    }
+  
+    &-3 {
+      border-bottom-width: $border-size * 3 !important;
+    }
   }
 
   &-left {
     border-left: $border-size $border-style $border-color !important;
+
+    &-2 {
+      border-left-width: $border-size * 2 !important;
+    }
+  
+    &-3 {
+      border-left-width: $border-size * 3 !important;
+    }
   }
 }
 
