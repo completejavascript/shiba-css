@@ -183,6 +183,10 @@
     #{$prop}: $blue-grey !important;
   }
 
+  .#{$prop}-dark-grey {
+    #{$prop}: $dark-grey !important;
+  }
+
   .#{$prop}-black {
     #{$prop}: $black !important;
   }
