@@ -37,26 +37,6 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
 
 // Color
-//-- Default Color Pallet
-$background-color: #fff !default;
-$primary-color: #4078c0 !default;
-$important-color: #F44336 !default;
-$warning-color: #FFC107 !default;
-$primary-text-color: #222 !default;
-$secondary-text-color: #757575 !default;
-$highlight-color: #FF0 !default;
-$border-color: #CDCDCD !default;
-$code-bg-color: rgba(27,31,35,0.08) !default;
-$box-shadow-color: rgba(0,0,0,0.12) !default;
-$kbd-bg-color: #fafbfc !default;
-$kbd-color: #444d56 !default;
-$button-border-color: #bbb !default;
-$button-primary-text-color: #FFF !default;
-$form-item-border-color: #bbb !default;
-$button-bg-color: transparent !default;
-$form-item-bg-color: transparent !default;
-$button-primary-inverse-bg-color: transparent !default;
-
 //-- Material Design Color
 $red: #f44336 !default;
 $pink: #e91e63 !default;
@@ -80,6 +60,26 @@ $blue-grey: #607d8b !default;
 $dark-grey: #1e1e1e !default;
 $black: #0A0A0A !default;
 $white: #fff !default;
+
+//-- Default Color Pallet
+$background-color: $white !default;
+$primary-color: $blue !default;
+$important-color: $red !default;
+$warning-color: $orange !default;
+$primary-text-color: #222 !default;
+$secondary-text-color: #757575 !default;
+$highlight-color: $yellow !default;
+$border-color: #CDCDCD !default;
+$code-bg-color: rgba(27,31,35,0.08) !default;
+$box-shadow-color: rgba(0,0,0,0.12) !default;
+$kbd-bg-color: #fafbfc !default;
+$kbd-color: #444d56 !default;
+$button-border-color: #bbb !default;
+$button-primary-text-color: $white !default;
+$form-item-border-color: #bbb !default;
+$button-bg-color: transparent !default;
+$form-item-bg-color: transparent !default;
+$button-primary-inverse-bg-color: transparent !default;
 
 // Border
 $border-size: 0.1rem !default;
@@ -238,8 +238,8 @@ $button-primary-hover-border-color: darken($button-primary-bg-color, 8%) !defaul
 $button-primary-inverse-text-color: $primary-color !default;
 $button-primary-inverse-border-color: $primary-color !default;
 $button-primary-inverse-hover-text-color: $background-color !default;
-$button-primary-inverse-hover-bg-color: $primary-color !default;
-$button-primary-inverse-hover-border-color: $primary-color !default;
+$button-primary-inverse-hover-bg-color: darken($primary-color, 8%) !default;
+$button-primary-inverse-hover-border-color: darken($primary-color, 8%) !default;
 $button-disable-text-color: $secondary-text-color !default;
 $button-disable-bg-color: $background-color !default;
 $button-disable-border-color: $border-color !default;
