@@ -14,6 +14,9 @@
 + Button
 + Image
 + Transition
++ Position
++ Width, height
++ Flex
 */
 
 /* Color
@@ -309,18 +312,20 @@
 
 /* Display
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
-.display {
-  &-block {
-    display: block !important;
-  }
+.block {
+  display: block !important;
+}
 
-  &-inline-block {
-    display: inline-block !important;
-  }
+.inline-block {
+  display: inline-block !important;
+}
 
-  &-none {
-    display: none !important;
-  }
+.inline {
+  display: inline !important;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /* Opacity
@@ -395,4 +400,64 @@
   -webkit-transition: all $transition-sec $transition-type !important;
   -moz-transition: all $transition-sec $transition-type !important;
   transition: all $transition-sec $transition-type !important;
+}
+
+/* Position
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+.position {
+  &-fixed { 
+    position: fixed !important;
+  }
+
+  &-absolute {
+    position: absolute !important;
+  }
+
+  &-relative {
+    position: relative !important;
+  }
+
+  &-sticky {
+    position: sticky !important;
+  }
+}
+
+.top-zero {
+  top: 0 !important;
+}
+
+.right-zero {
+  right: 0 !important;
+}
+
+.bottom-zero {
+  bottom: 0 !important;
+}
+
+.left-zero {
+  left: 0 !important;
+}
+
+/* Width, height
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+@include size(width);
+@include size(height);
+
+/* Width, height
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+.flex {
+  display: flex !important;
+
+  &-column {
+    flex-flow: column wrap !important;
+    -ms-flex-flow: column wrap !important;
+  }
+
+  &-spread {
+    flex-grow: 1 !important;
+  }
+
+  &-static {
+    flex-shrink: 0 !important;
+  }
 }

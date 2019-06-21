@@ -9,6 +9,7 @@
 + Button
 + Form
 + Color
++ Size
 */
 
 /* Grid
@@ -193,5 +194,21 @@
 
   .#{$prop}-white {
     #{$prop}: $white !important;
+  }
+}
+
+/* Size
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+@mixin size($prop) {
+  .#{$prop}-full {
+    #{$prop}: 100% !important;
+  }
+
+  .#{$prop}-half {
+    #{$prop}: 50% !important;
+  }
+
+  .#{$prop}-zero {
+    #{$prop}: 100% !important;
   }
 }
