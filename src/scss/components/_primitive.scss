@@ -84,7 +84,7 @@ a {
   &:active,
   &:focus {
     color: $link-hover-color;
-    text-decoration: underline;
+    border-bottom: $link-hover-border;
   }
 }
 

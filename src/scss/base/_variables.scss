@@ -164,6 +164,7 @@ $mark-bg-color: $highlight-color !default;
 // Link
 $link-color: $primary-color !default;
 $link-hover-color: darken($link-color, 8%) !default;
+$link-hover-border: $border-size $border-style $primary-color !default;
 
 // Inline code
 $code-inline-bg-color: $code-bg-color !default;
