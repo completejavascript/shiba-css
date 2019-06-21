@@ -1,0 +1,20 @@
+/*
+* Size
+*/
+
+@mixin size($prop) {
+  .#{$prop}-full {
+    #{$prop}: 100% !important;
+  }
+
+  .#{$prop}-half {
+    #{$prop}: 50% !important;
+  }
+
+  .#{$prop}-zero {
+    #{$prop}: 0% !important;
+  }
+}
+
+@include size(width);
+@include size(height);

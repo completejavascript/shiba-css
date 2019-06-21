@@ -1,0 +1,10 @@
+/**
+* Effect
+*/
+
+// Transition
+.transition {
+  -webkit-transition: all $transition-sec $transition-type !important;
+  -moz-transition: all $transition-sec $transition-type !important;
+  transition: all $transition-sec $transition-type !important;
+}

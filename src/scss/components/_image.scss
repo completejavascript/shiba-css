@@ -1,0 +1,14 @@
+/*
+* Image
+*/
+
+.image {
+  &-responsive {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  &-round {
+    border-radius: 50% !important;
+  }
+}

@@ -1,6 +1,22 @@
 /**
- * Grid
- */
+* Grid
+*/
+
+// Generate column info in each break-point: xs, sm, md, lg, xl
+@mixin gen-column-width($type) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$type}-#{$i} {
+      width: (100% / $grid-columns) * $i;
+    }
+  }
+}
+
+// Set value of .container's width
+@mixin set-width($className, $value, $ratio) {
+  .#{$className} {
+    width: $value * $ratio;
+  }
+}
 
 .container-full, .container, .container-small {
   width: 100%;

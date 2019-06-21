@@ -1,0 +1,44 @@
+/*
+* Button
+*/
+
+.btn {
+  @include btn-style();
+
+  &-round {
+    border-radius: $button-round-border-radius !important;
+  }
+
+  &-square {
+    border-radius: 0 !important;
+  }
+
+  &-primary {
+    color: $button-primary-text-color !important;
+    background-color: $button-primary-bg-color !important;
+    border-color: $button-primary-border-color !important;
+
+    &:hover, &:focus {
+      color: $button-primary-text-color !important;
+      background-color: $button-primary-hover-bg-color !important;
+      border-color: $button-primary-hover-border-color !important;
+    }
+
+    &-inverse {
+      color: $button-primary-inverse-text-color !important;
+      background-color: $button-primary-inverse-bg-color !important;
+      border-color: $button-primary-inverse-border-color !important;
+
+      &:hover, &:focus {
+        color: $button-primary-inverse-hover-text-color !important;
+        background-color: $button-primary-inverse-hover-bg-color !important;
+        border-color: $button-primary-inverse-hover-border-color !important;
+      }
+    }
+  }
+
+  &-full {
+    width: 100% !important;
+    display: block !important;
+  }
+}

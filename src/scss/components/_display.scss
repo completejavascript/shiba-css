@@ -1,0 +1,29 @@
+/*
+* Display
+*/
+
+// Display
+.block {
+  display: block !important;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.inline {
+  display: inline !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+// Opacity
+.opacity {
+  opacity: 1 !important;
+
+  &-none {
+    opacity: 0
+  }
+}

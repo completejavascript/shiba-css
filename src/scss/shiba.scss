@@ -1,10 +1,5 @@
 /*! 
- * Shiba CSS | MIT License | v1.0.1
- *
- * A simple and lightweight CSS Framework built with Sass 
- * for building responsive web apps.
- *
- * Author: Lam Pham
+ * Shiba CSS | MIT License | v1.0.1 | Author: Lam Pham
  * Source: https://github.com/completejavascript/shiba
  * Documentation: https://about.phamvanlam.com/shiba
  */
@@ -17,11 +12,22 @@
 @import "base/mixins";
 @import "base/normalize";
 @import "base/reset";
+@import "base/primitive";
 
 //==============================================================================
 // Components
 //==============================================================================
 
-@import "components/primitive";
-@import "components/helpers";
 @import "components/grid";
+@import "components/flex";
+@import "components/color";
+@import "components/border";
+@import "components/padding";
+@import "components/margin";
+@import "components/size";
+@import "components/position";
+@import "components/display";
+@import "components/button";
+@import "components/image";
+@import "components/text";
+@import "components/effect";

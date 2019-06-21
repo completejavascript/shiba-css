@@ -1,0 +1,83 @@
+/*
+* Margins
+*/
+
+.margin {
+  margin: $margin !important;
+
+  &-2 {
+    margin: $margin * 2 !important;
+  }
+
+  &-3 {
+    margin: $margin * 3 !important;
+  }
+
+  &-none {
+    margin: 0 !important;
+  }
+
+  &-top {
+    margin-top: $margin !important;
+
+    &-2 {
+      margin-top: $margin * 2 !important;
+    }
+
+    &-3 {
+      margin-top: $margin * 3 !important;
+    }
+
+    &-none {
+      margin-top: 0 !important;
+    }
+  }
+
+  &-right {
+    margin-right: $margin !important;
+
+    &-2 {
+      margin-right: $margin * 2 !important;
+    }
+
+    &-3 {
+      margin-right: $margin * 3 !important;
+    }
+
+    &-none {
+      margin-right: 0 !important;
+    }
+  }
+
+  &-bottom {
+    margin-bottom: $margin !important;
+
+    &-2 {
+      margin-bottom: $margin * 2 !important;
+    }
+
+    &-3 {
+      margin-bottom: $margin * 3 !important;
+    }
+
+    &-none {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &-left {
+    margin-left: $margin !important;
+
+    &-2 {
+      margin-left: $margin * 2 !important;
+    }
+
+    &-3 {
+      margin-left: $margin * 3 !important;
+    }
+
+    &-none {
+      margin-left: 0 !important;
+    }
+  }
+}

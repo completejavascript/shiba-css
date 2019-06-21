@@ -1,0 +1,20 @@
+/*
+* Flex
+*/
+
+.flex {
+  display: flex !important;
+
+  &-column {
+    flex-flow: column wrap !important;
+    -ms-flex-flow: column wrap !important;
+  }
+
+  &-spread {
+    flex-grow: 1 !important;
+  }
+
+  &-static {
+    flex-shrink: 0 !important;
+  }
+}

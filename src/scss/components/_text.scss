@@ -1,0 +1,48 @@
+/*
+* Text
+*/
+
+.text {
+  // Text position
+  &-center {
+    text-align: center !important;
+  }
+
+  &-left {
+    text-align: left !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+
+  // Text-color
+  &-important {
+    color: $important-color !important;
+  }
+
+  &-warning {
+    color: $warning-color !important;
+  }
+
+  &-primary {
+    color: $primary-color !important;
+  }
+
+  &-description {
+    color: $secondary-text-color !important;
+  }
+
+  // Text-transform
+  &-uppercase {
+    text-transform: uppercase !important;
+  }
+
+  &-lowercase {
+    text-transform: lowercase !important;
+  }
+
+  &-capitalize {
+    text-transform: capitalize !important;
+  }
+}

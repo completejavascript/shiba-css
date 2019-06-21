@@ -1,0 +1,50 @@
+/*
+* Position
+*/
+
+// position
+.position {
+  &-fixed { 
+    position: fixed !important;
+  }
+
+  &-absolute {
+    position: absolute !important;
+  }
+
+  &-relative {
+    position: relative !important;
+  }
+
+  &-sticky {
+    position: sticky !important;
+  }
+}
+
+// Side relative
+.top-zero {
+  top: 0 !important;
+}
+
+.right-zero {
+  right: 0 !important;
+}
+
+.bottom-zero {
+  bottom: 0 !important;
+}
+
+.left-zero {
+  left: 0 !important;
+}
+
+// Float
+.float {
+  &-left {
+    float: left !important;
+  }
+
+  &-right {
+    float: right !important;
+  }
+}
