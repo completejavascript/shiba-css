@@ -164,7 +164,6 @@ $mark-bg-color: $highlight-color !default;
 // Link
 $link-color: $primary-color !default;
 $link-hover-color: darken($link-color, 8%) !default;
-$link-hover-border: $border-size $border-style $primary-color !default;
 
 // Inline code
 $code-inline-bg-color: $code-bg-color !default;
@@ -236,11 +235,14 @@ $button-primary-bg-color: $primary-color !default;
 $button-primary-border-color: $primary-color !default;
 $button-primary-hover-bg-color: darken($button-primary-bg-color, 8%) !default;
 $button-primary-hover-border-color: darken($button-primary-bg-color, 8%) !default;
-$button-primary-inverse-text-color: $primary-text-color !default;
+$button-primary-inverse-text-color: $primary-color !default;
 $button-primary-inverse-border-color: $primary-color !default;
 $button-primary-inverse-hover-text-color: $background-color !default;
 $button-primary-inverse-hover-bg-color: $primary-color !default;
 $button-primary-inverse-hover-border-color: $primary-color !default;
+$button-disable-text-color: $secondary-text-color !default;
+$button-disable-bg-color: $background-color !default;
+$button-disable-border-color: $border-color !default;
 
 /* Form
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */

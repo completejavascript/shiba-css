@@ -13,6 +13,19 @@
     border-radius: 0 !important;
   }
 
+  &-disable {
+    color: $button-disable-text-color !important;
+    background-color: $button-disable-bg-color !important;
+    border-color: $button-disable-border-color !important;
+
+    &:hover, &:focus {
+      cursor: default !important;
+      color: $button-disable-text-color !important;
+      background-color: $button-disable-bg-color !important;
+      border-color: $button-disable-border-color !important;
+    }
+  }
+
   &-primary {
     color: $button-primary-text-color !important;
     background-color: $button-primary-bg-color !important;
