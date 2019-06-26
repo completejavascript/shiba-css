@@ -45,4 +45,15 @@
   &-capitalize {
     text-transform: capitalize !important;
   }
+
+  // Size
+  &-title {
+    font-size: $text-title-mobile-font-size !important;
+  }
+}
+
+@include sm-breakpoint {
+  .text-title {
+    font-size: $text-title-font-size !important;
+  }
 }

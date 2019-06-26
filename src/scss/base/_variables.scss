@@ -31,6 +31,7 @@
 + Table
 + Button
 + Form
++ Text
 */
 
 /* Global Variables
@@ -268,3 +269,8 @@ $form-fieldset-padding: $padding !default;
 $form-fieldset-margin: $margin 0 !default;
 $form-legend-font-weight: 600 !default;
 $form-legend-padding: 0 0.5rem !default;
+
+/* Text
+––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
+$text-title-mobile-font-size: 4rem !default;
+$text-title-font-size: 4.5rem !default;
