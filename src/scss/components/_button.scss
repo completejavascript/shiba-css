@@ -52,6 +52,7 @@
 
   &-full {
     width: 100% !important;
-    display: block !important;
+    display: flex !important;
+    display: -webkit-flex !important;
   }
 }

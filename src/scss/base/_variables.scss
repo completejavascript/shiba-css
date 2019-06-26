@@ -230,7 +230,7 @@ $button-round-border-radius: 4rem !default;
 $button-text-transform: none !default;
 $button-text-color: $primary-text-color !default;
 $button-hover-border-color: $primary-color !default;
-$button-hover-text-color: darken($button-text-color, 8%) !default;
+$button-hover-text-color: $primary-color !default;
 $button-primary-bg-color: $primary-color !default;
 $button-primary-border-color: $primary-color !default;
 $button-primary-hover-bg-color: darken($button-primary-bg-color, 8%) !default;
