@@ -43,10 +43,12 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––--------------------------- */
 @mixin btn-style {
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   white-space: nowrap;
-  text-align: center;
   height: $button-height;
   line-height: $button-height;
   padding: $button-padding;
