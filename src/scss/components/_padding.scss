@@ -5,6 +5,10 @@
 .padding {
   padding: $padding !important;
 
+  &-half {
+    padding: $padding * 0.5 !important;
+  }
+
   &-2 {
     padding: $padding * 2 !important;
   }
