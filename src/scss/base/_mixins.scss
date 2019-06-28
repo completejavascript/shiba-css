@@ -80,7 +80,12 @@
   width: $form-item-width;
   max-width: $form-item-max-width;
 
-  &:hover, &:focus {
+  &:hover {
+    border-color: $form-item-hover-border-color;
+    outline: $form-item-focus-outline; 
+  }
+
+  &:focus {
     border-color: $form-item-focus-border-color;
     outline: $form-item-focus-outline; 
   }
