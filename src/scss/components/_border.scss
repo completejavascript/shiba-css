@@ -3,7 +3,7 @@
 */
 
 .border {
-  border: $border-size $border-style !important;
+  border: $border-size $border-style;
 
   &-default {
     border: $border-size $border-style $border-color !important;
@@ -18,7 +18,7 @@
   }
 
   &-top {
-    border-top: $border-size $border-style !important;
+    border-top: $border-size $border-style;
 
     &-default {
       border-top: $border-size $border-style $border-color !important;
@@ -34,7 +34,7 @@
   }
 
   &-right {
-    border-right: $border-size $border-style !important;
+    border-right: $border-size $border-style;
 
     &-default {
       border-right: $border-size $border-style $border-color !important;
@@ -50,7 +50,7 @@
   }
 
   &-bottom {
-    border-bottom: $border-size $border-style !important;
+    border-bottom: $border-size $border-style;
 
     &-default {
       border-bottom: $border-size $border-style $border-color !important;
@@ -66,7 +66,7 @@
   }
 
   &-left {
-    border-left: $border-size $border-style !important;
+    border-left: $border-size $border-style;
 
     &-default {
       border-left: $border-size $border-style $border-color !important;
