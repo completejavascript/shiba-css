@@ -3,7 +3,11 @@
 */
 
 .border {
-  border: $border-size $border-style $border-color !important;
+  border: $border-size $border-style !important;
+
+  &-default {
+    border: $border-size $border-style $border-color !important;
+  }
 
   &-2 {
     border-width: $border-size * 2 !important;
@@ -14,7 +18,11 @@
   }
 
   &-top {
-    border-top: $border-size $border-style $border-color !important;
+    border-top: $border-size $border-style !important;
+
+    &-default {
+      border-top: $border-size $border-style $border-color !important;
+    }
 
     &-2 {
       border-top-width: $border-size * 2 !important;
@@ -26,7 +34,11 @@
   }
 
   &-right {
-    border-right: $border-size $border-style $border-color !important;
+    border-right: $border-size $border-style !important;
+
+    &-default {
+      border-right: $border-size $border-style $border-color !important;
+    }
 
     &-2 {
       border-right-width: $border-size * 2 !important;
@@ -38,7 +50,11 @@
   }
 
   &-bottom {
-    border-bottom: $border-size $border-style $border-color !important;
+    border-bottom: $border-size $border-style !important;
+
+    &-default {
+      border-bottom: $border-size $border-style $border-color !important;
+    }
 
     &-2 {
       border-bottom-width: $border-size * 2 !important;
@@ -50,7 +66,11 @@
   }
 
   &-left {
-    border-left: $border-size $border-style $border-color !important;
+    border-left: $border-size $border-style !important;
+
+    &-default {
+      border-left: $border-size $border-style $border-color !important;
+    }
 
     &-2 {
       border-left-width: $border-size * 2 !important;
