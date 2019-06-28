@@ -83,6 +83,10 @@
     #{$prop}: $dark-grey !important;
   }
 
+  .#{$prop}-light-grey {
+    #{$prop}: $light-grey !important;
+  }
+
   .#{$prop}-black {
     #{$prop}: $black !important;
   }
