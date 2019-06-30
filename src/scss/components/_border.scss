@@ -5,8 +5,9 @@
 .border {
   border: $border-size $border-style;
 
+  // Border radius
   &-radius {
-    border: $border-radius !important;
+    border-radius: $border-radius !important;
   }
 
   &-default {
