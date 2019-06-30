@@ -5,6 +5,10 @@
 .border {
   border: $border-size $border-style;
 
+  &-radius {
+    border: $border-radius !important;
+  }
+
   &-default {
     border: $border-size $border-style $border-color !important;
   }

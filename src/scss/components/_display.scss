@@ -24,6 +24,17 @@
   opacity: 1 !important;
 
   &-none {
-    opacity: 0
+    opacity: 0 !important;
+  }
+
+  &-half {
+    opacity: 0.5 !important;
+  }
+}
+
+// Line height
+.line-height {
+  &-reset {
+    line-height: 1 !important;
   }
 }
