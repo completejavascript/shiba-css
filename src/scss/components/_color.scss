@@ -75,6 +75,10 @@
     #{$prop}: $grey !important;
   }
 
+  .#{$prop}-grey-half {
+    #{$prop}: $grey-half !important;
+  }
+
   .#{$prop}-blue-grey {
     #{$prop}: $blue-grey !important;
   }
