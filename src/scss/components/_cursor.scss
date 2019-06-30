@@ -1,0 +1,21 @@
+/**
+* Cursor
+*/
+
+.cursor {
+  &-default {
+    cursor: default !important;
+  }
+
+  &-pointer {
+    cursor: pointer !important;
+  }
+
+  &-none {
+    cursor: none !important;
+  }
+
+  &-move {
+    cursor: move !important;
+  }
+}
