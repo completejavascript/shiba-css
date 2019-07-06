@@ -41,14 +41,14 @@
 
 @include sm-breakpoint {
   @include gen-column-width(sm);
-  @include set-width("container", $sm, $grid-container-ratio);
-  @include set-width("container-small", $sm, $grid-container-ratio);
+  @include set-width("container", 100%, $grid-container-ratio);
+  @include set-width("container-small", 100%, $grid-container-small-ratio);
 }
 
 @include md-breakpoint {
   @include gen-column-width(md);
   @include set-width("container", $md, $grid-container-ratio);
-  @include set-width("container-small", $md, $grid-container-ratio);
+  @include set-width("container-small", $md, $grid-container-small-ratio);
 }
 
 @include lg-breakpoint {
