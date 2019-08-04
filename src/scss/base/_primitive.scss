@@ -156,7 +156,12 @@ ol, ul {
 }
 
 // Remove extra margin for nested lists
-ul li ul, ul li ol, ol li ol, ol li ul {
+ul li ul, 
+ul li ol, 
+ol li ol, 
+ol li ul,
+ul li p,
+ol li p {
   margin-bottom: $list-nested-margin;
 }
 
