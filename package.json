@@ -7,7 +7,7 @@
     "compile": "node-sass ./src/scss/ -o ./docs/css/ -w -r --source-map-embed --source-map-contents --output-style expanded",
     "compress": "node-sass ./src/scss/shiba.scss ./docs/css/shiba.min.css -w --output-style compressed",
     "serve": "light-server -s docs -w \"docs/**\"",
-    "dev": "concurrently \"npm run compile\" \"npm run compress\" \"npm run serve\""
+    "dev": "concurrently \"yarn run compile\" \"yarn run compress\" \"yarn run serve\""
   },
   "keywords": [
     "css",
