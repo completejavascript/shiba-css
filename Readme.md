@@ -1,5 +1,7 @@
 ## Shiba.CSS Framework
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 A simple and lightweight CSS Framework built with Sass for building responsive web apps.
 
 ## Modification
@@ -17,19 +19,19 @@ Then, run the project:
 npm run dev
 ```
 
-In the project, I define all variables in ```src/base/_variables.scss```. You can customize the style by changing their values. 
+In the project, I define all variables in `src/base/_variables.scss`. You can customize the style by changing their values.
 
-After changing, you can navigate to ```http://localhost:4000/``` in your browser to see what you make changes.
+After changing, you can navigate to `http://localhost:4000/` in your browser to see what you make changes.
 
 ## Links
 
-  * Demo: [Shiba.CSS](https://about.phamvanlam.com/shiba-css)
+- Demo: [Shiba.CSS](https://about.phamvanlam.com/shiba-css)
 
 ## Visit me
 
-  * Blog: [Complete JavaScript](https://completejavascript.com/)
-  * Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
-  * Portfolio: [Lam Pham](https://about.phamvanlam.com/)
+- Blog: [Complete JavaScript](https://completejavascript.com/)
+- Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
+- Portfolio: [Lam Pham](https://about.phamvanlam.com/)
 
 ## License
 
