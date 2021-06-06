@@ -1,6 +1,6 @@
 {
   "name": "shiba-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and lightweight CSS Framework built with Sass for building responsive web apps",
   "homepage": "https://completejavascript.github.io/shiba-css",
   "main": "index.js",
@@ -9,7 +9,8 @@
     "compress": "node-sass ./src/scss/shiba.scss ./docs/css/shiba.min.css -w --output-style compressed",
     "serve": "light-server -s docs -w \"docs/**\"",
     "dev": "concurrently \"yarn run compile\" \"yarn run compress\" \"yarn run serve\"",
-    "release": "standard-version"
+    "first-release": "standard-version --first-release",
+    "prerelease": "standard-version"
   },
   "repository": {
     "type": "git",
