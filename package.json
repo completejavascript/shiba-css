@@ -9,6 +9,13 @@
     "serve": "light-server -s docs -w \"docs/**\"",
     "dev": "concurrently \"yarn run compile\" \"yarn run compress\" \"yarn run serve\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/completejavascript/shiba-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/completejavascript/shiba-css/issues"
+  },
   "keywords": [
     "css",
     "sass",
