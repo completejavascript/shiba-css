@@ -21,8 +21,8 @@
   "author": "Lam Pham",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^4.1.0",
-    "light-server": "^2.6.2",
-    "node-sass": "^4.13.1"
+    "concurrently": "^6.2.0",
+    "light-server": "^2.9.1",
+    "node-sass": "^6.0.0"
   }
 }
