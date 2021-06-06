@@ -33,14 +33,18 @@ And distribution files can be found at `docs/css/shiba.min.css`.
 
 ## Links
 
-- Demo: [Shiba.CSS](https://completejavascript.github.io/shiba-css)
+[Demo Shiba.CSS](https://completejavascript.github.io/shiba-css)
+
+## Change Log
+
+See [CHANGELOG.md](CHANGELOG.md)
+
+## License
+
+This project is open source and available under the [MIT License](https://github.com/completejavascript/shiba-css/blob/master/LICENSE.md).
 
 ## Visit me
 
 - Blog: [Complete JavaScript](https://completejavascript.com/)
 - Fanpage: [Complete JavaScript](https://www.facebook.com/completejavascript/)
 - Portfolio: [Lam Pham](https://about.phamvanlam.com/)
-
-## License
-
-This project is open source and available under the [MIT License](https://github.com/completejavascript/shiba-css/blob/master/LICENSE.md).
