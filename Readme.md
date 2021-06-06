@@ -6,9 +6,25 @@ A simple and lightweight CSS Framework built with Sass for building responsive w
 
 ## Usage
 
+### Import in Browser
+
 - [Download the stylesheet](https://completejavascript.github.io/shiba-css/css/shiba.min.css) or use the CDN URL: [https://unpkg.com/shiba-css@1.0.0/docs/css/shiba.min.css](https://unpkg.com/shiba-css@1.0.0/docs/css/shiba.min.css).
 
 - Save the stylesheet and link to it in the head of your project.
+
+### Import in Node Modules
+
+- Install:
+
+```bash
+yarn add shiba-css # npm i shiba-css
+```
+
+- Import:
+
+```js
+import "shiba-css/docs/css/shiba.min.css";
+```
 
 ## Modification
 
