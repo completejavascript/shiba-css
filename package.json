@@ -8,7 +8,8 @@
     "compile": "node-sass ./src/scss/ -o ./docs/css/ -w -r --source-map-embed --source-map-contents --output-style expanded",
     "compress": "node-sass ./src/scss/shiba.scss ./docs/css/shiba.min.css -w --output-style compressed",
     "serve": "light-server -s docs -w \"docs/**\"",
-    "dev": "concurrently \"yarn run compile\" \"yarn run compress\" \"yarn run serve\""
+    "dev": "concurrently \"yarn run compile\" \"yarn run compress\" \"yarn run serve\"",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,8 @@
   "devDependencies": {
     "concurrently": "^6.2.0",
     "light-server": "^2.9.1",
-    "node-sass": "^6.0.0"
+    "node-sass": "^6.0.0",
+    "standard-version": "^9.3.0"
   },
   "dependencies": {}
 }

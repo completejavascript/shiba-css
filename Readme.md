@@ -33,7 +33,7 @@ And distribution files can be found at `docs/css/shiba.min.css`.
 
 ## Links
 
-- Demo: [Shiba.CSS](https://about.phamvanlam.com/shiba-css)
+- Demo: [Shiba.CSS](https://completejavascript.github.io/shiba-css)
 
 ## Visit me
 
