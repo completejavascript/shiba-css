@@ -2,6 +2,7 @@
   "name": "shiba-css",
   "version": "1.0.0",
   "description": "A simple and lightweight CSS Framework built with Sass for building responsive web apps",
+  "homepage": "http://completejavascript.github.io/shiba-css",
   "main": "index.js",
   "scripts": {
     "compile": "node-sass ./src/scss/ -o ./docs/css/ -w -r --source-map-embed --source-map-contents --output-style expanded",
