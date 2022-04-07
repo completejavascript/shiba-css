@@ -1,56 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-<head>
+    <title>Shiba.CSS Framework - Lam Pham</title>
 
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta
+      name="description"
+      content="A simple and lightweight CSS Framework built with Sass for building responsive web apps"
+    />
+    <meta name="author" content="Lam Pham" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Shiba.CSS Framework - Lam Pham</title>
+    <link rel="stylesheet" href="css/shiba.min.css" />
+    <link rel="icon" href="images/favicon.ico" />
 
-  <meta name="description"
-    content="A simple and lightweight CSS Framework built with Sass for building responsive web apps">
-  <meta name="author" content="Lam Pham">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-96543695-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-96543695-6");
+    </script>
+  </head>
 
-  <link rel="stylesheet" href="css/shiba.min.css">
-  <link rel="icon" href="images/favicon.ico">
-</head>
+  <body>
+    <div class="container-small">
+      <header class="margin-top-3 margin-bottom-3 text-center">
+        <h1 class="text-title"><strong>Shiba.CSS Framework</strong></h1>
+        <p>Common HTML5 elements for Shiba.CSS Framework testing purposes.</p>
+        <a
+          class="github-button"
+          href="https://github.com/completejavascript/shiba-css"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star completejavascript/shiba-css on GitHub"
+          >Star</a
+        >
+        <a
+          class="github-button"
+          href="https://github.com/completejavascript"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Follow @completejavascript on GitHub"
+          >Follow @completejavascript</a
+        >
+      </header>
+      <hr />
 
-<body>
-  <div class="container-small">
-    <header class="margin-top-3 margin-bottom-3 text-center">
-      <h1 class="text-title"><strong>Shiba.CSS Framework</strong></h1>
-      <p>Common HTML5 elements for Shiba.CSS Framework testing purposes.</p>
-      <a class="github-button" href="https://github.com/completejavascript/shiba-css" data-size="large"
-        data-show-count="true" aria-label="Star completejavascript/shiba-css on GitHub">Star</a>
-      <a class="github-button" href="https://github.com/completejavascript" data-size="large" data-show-count="true"
-        aria-label="Follow @completejavascript on GitHub">Follow @completejavascript</a>
-    </header>
-    <hr>
+      <div include-html="contents/typography.html"></div>
+      <div include-html="contents/formatting.html"></div>
+      <div include-html="contents/list.html"></div>
+      <div include-html="contents/table.html"></div>
+      <div include-html="contents/button.html"></div>
+      <div include-html="contents/form.html"></div>
+      <div include-html="contents/grid.html"></div>
+      <div include-html="contents/image.html"></div>
+      <div include-html="contents/transition.html"></div>
+      <div include-html="contents/helpers.html"></div>
 
-    <div include-html="contents/typography.html"></div>
-    <div include-html="contents/formatting.html"></div>
-    <div include-html="contents/list.html"></div>
-    <div include-html="contents/table.html"></div>
-    <div include-html="contents/button.html"></div>
-    <div include-html="contents/form.html"></div>
-    <div include-html="contents/grid.html"></div>
-    <div include-html="contents/image.html"></div>
-    <div include-html="contents/transition.html"></div>
-    <div include-html="contents/helpers.html"></div>
+      <footer>
+        <p class="text-center">
+          Made by
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://about.phamvanlam.com/"
+            >Lam Pham</a
+          >. Powered by
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://getskeleton.com/"
+            >Skeleton</a
+          >,
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://taniarascia.github.io/primitive/"
+            >Primitive</a
+          >
+          and
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://sass-lang.com/"
+            >SASS</a
+          >.
+        </p>
+      </footer>
+    </div>
 
-    <footer>
-      <p class="text-center">Made by <a target="_blank" rel="noopener noreferrer"
-          href="http://about.phamvanlam.com/">Lam Pham</a>.
-        Powered by <a target="_blank" rel="noopener noreferrer" href="http://getskeleton.com/">Skeleton</a>,
-        <a target="_blank" rel="noopener noreferrer" href="https://taniarascia.github.io/primitive/">Primitive</a>
-        and <a target="_blank" rel="noopener noreferrer" href="https://sass-lang.com/">SASS</a>.</p>
-    </footer>
-  </div>
-
-  <script src="scripts/main.js"></script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-</body>
-
+    <script src="scripts/main.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
 </html>
